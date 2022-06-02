@@ -22,8 +22,8 @@
             Если больше или равно 10 - “больше 10”</p>
         <button @click="count++">+</button>
         <p v-if="count == 0">ноль</p>
-        <p v-if="count > 0 && count < 10">меньше 10</p>
-        <p v-if="count >= 10">больше 10</p>
+        <p v-else-if="count > 0 && count < 10">меньше 10</p>
+        <p v-else-if="count >= 10">больше 10</p>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
